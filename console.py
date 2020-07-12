@@ -2,6 +2,8 @@
 """This is the console for the Holberton HNBN project"""
 
 import cmd
+from typing import List
+
 from models.base_model import BaseModel
 from models import storage
 from models.city import City
@@ -18,6 +20,7 @@ class HBNBCommand(cmd.Cmd):
        group - contains all the classes used in the project
     """
     prompt = "(hbnb)"
+
     __list_class = [
         'BaseModel',
         'User',
